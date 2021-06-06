@@ -1,6 +1,6 @@
 from flask import Flask,request, render_template
 from flask import jsonify
-
+from flask_cors import CORS
 import tensorflow as tf
 import requests
 
@@ -132,6 +132,7 @@ def load_and_pred_image(url,model, img_shape=224, scale=False,class_names=class_
     return pred_class
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route('/')
 def home():

@@ -11,5 +11,5 @@ document.getElementById("button1").addEventListener("click", function(){
                 })
         .then(res=> res.json())
         .then(data=> div.innerText = `You are looking at \n ${data['Prediction']}..`)
-        .catch(err=> console.log(err))
+        .catch(err=> alert("Please try a different Image link"))
 });
