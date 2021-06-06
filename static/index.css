@@ -1,0 +1,171 @@
+body {
+  margin: 20px;
+  font-family: "Courier", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: cornsilk;
+  background-image: url("bgimg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: darken;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+button {
+  cursor: pointer;
+}
+
+.App {
+  text-align: center;
+}
+.pred {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(241, 242, 243, 0.904);
+  font-weight: bold;
+  font-size: 40px;
+}
+.top {
+  color: rgba(241, 242, 243, 0.904);
+  font-weight: bold;
+}
+.imagecont{
+padding:20px
+}
+
+.note {
+  color: bisque;
+  font-weight: bold;
+  background-color: rgb(37, 12, 59);
+  opacity: 0.7;
+  margin-top: 1cm;
+  font-size:30px;
+  align-items:center;
+  text-align:center;
+  border-radius:10px;
+}
+.input{
+  padding:10px;
+  width:10cm;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  opacity: 0.7;
+  max-width:4cm;
+}
+
+.logo:hover{
+    opacity:0.3;
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+
+.logocontainer {
+  display: flex;
+  width: 20px;
+  flex-direction: row;
+  justify-content: start;
+  width: 2cm;
+  margin: 20px;
+}
+.imag{
+
+box-shadow: 5px 10px;
+}
+
+button {
+  background-color: rgb(128, 20, 95);
+  width:3cm;
+  font-size:15px;
+  font-weight:bold;
+  color:darken;
+}
+
+@media screen and (max-width: 700px) and (min-width: 200px) {
+    body{
+    margin:10px;
+    }
+  .detect {
+    width: 30% !important;
+  }
+  .note {
+    width:3cm
+    position: relative;
+    margin-top: 40px;
+    font-size:20px;
+    margin-bottom:40px;
+  }
+  .logo{
+  max-width:3cm;
+  }
+
+  .input{
+  padding:3px;
+  width:5cm;
+  }
+}
+
+.form {
+    padding: 30px;
+    border-radius:10px;
+  width: 700px;
+  background: linear-gradient(324deg, #232927 4%, transparent 4%) -70px 43px,
+    linear-gradient(36deg, #232927 4%, transparent 4%) 30px 43px,
+    linear-gradient(72deg, #e3d7bf 8.5%, transparent 8.5%) 30px 43px,
+    linear-gradient(288deg, #e3d7bf 8.5%, transparent 8.5%) -70px 43px,
+    linear-gradient(216deg, #e3d7bf 7.5%, transparent 7.5%) -70px 23px,
+    linear-gradient(144deg, #e3d7bf 7.5%, transparent 7.5%) 30px 23px,
+    linear-gradient(324deg, #232927 4%, transparent 4%) -20px 93px,
+    linear-gradient(36deg, #232927 4%, transparent 4%) 80px 93px,
+    linear-gradient(72deg, #e3d7bf 8.5%, transparent 8.5%) 80px 93px,
+    linear-gradient(288deg, #e3d7bf 8.5%, transparent 8.5%) -20px 93px,
+    linear-gradient(216deg, #e3d7bf 7.5%, transparent 7.5%) -20px 73px,
+    linear-gradient(144deg, #e3d7bf 7.5%, transparent 7.5%) 80px 73px;
+  background-color: #232927;
+  background-size: 100px 100px;
+  opacity: 0.8;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

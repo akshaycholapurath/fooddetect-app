@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="static/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="{{ url_for('static',filename='favicon.ico')}}">
+      <title>FoodRecog-App</title>
+</head>
+<body>
+    <div class="App">
+          <div class="app-container">
+                    <div class="logocontainer ">
+                        <div class="db center mw4 tc mt3 black link shadow-5 dim"
+                            >
+
+                            <img class="db ba b--black-10 shadow-1 grow logo"
+                                alt="logo"
+                                src="static/log.PNG"
+                             />
+
+                        </div>
+
+                    </div>
+                    <div id="pred" class="pred center">
+
+                    </div>
+
+                    <div >
+                      <p class='f3 note w-50 br2 center'>
+                         This app will try to detect food. Have a try
+                      </p>
+                      <div class='center fullcont' >
+                          <div class='form center pa4 shadow-3 br3'>
+                            <input id='uri' type='text' class='input f4 pa2 w-75 center' placeholder='Food Image Url' />
+                            <button id='button1' class='detect w-25 grow f4 link ph3 pv2 dib white '
+                                    >Detect</button>
+                          </div>
+                       </div>
+                  </div>
+                    <div class='center imagecont'>
+                        <div class='absolute mt2 shadow-5'>
+                            <img id='image' class='imag' alt='' src="" width='500px' height='auto' />
+                        </div>
+                    </div>
+          </div>
+      </div>
+<script src="static/script.js"></script>
+</body>
+</html>
